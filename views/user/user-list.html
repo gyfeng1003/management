@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>用户列表</title>
+    <link href="../../lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="../../js/lib/select2/select2.css" rel="stylesheet">-->
+    <!--<link href="../../js/lib/select2/select2-bootstrap.css" rel="stylesheet">-->
+    <link href="../../lib/table/bootstrap-table.css" rel="stylesheet">
+    <link href="../../lib/table/extensions/page-jumpto/bootstrap-table-jumpto.css" rel="stylesheet">
+    <link href="../../css/common/common.css" rel="stylesheet">
+    <link href="../../css/common/style.css" rel="stylesheet">
+    <link href="../../css/user/list.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../lib/jquery-3.3.1.min.js"></script>
+    <!--<script src="../../js/lib/select2/select2.min.js"></script>-->
+    <script src="../../lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../../lib/table/bootstrap-table.js"></script>
+    <script src="../../lib/table/extensions/page-jumpto/bootstrap-table-jumpto.js"></script>
+    <script src="../../lib/table/bootstrap-table-zh-CN.min.js"></script>
+    <script src="../../js/user/user-list.js"></script>
+</head>
+<body>
+<div class="container-fluid" id="user-list">
+    <div class="row">
+        <div class="col-sm-12  col-md-12 main">
+            <h4 class="page-header">用户列表<span class="tip">总共85个项目</span></h4>
+
+            <div class="col-md-12  col-sm-12 pl-0 pr-0 search-condition">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3">
+                        <form class="form-inline">
+                            <div class="form-group" style="padding-left: 0;">
+                                <button type="button" class="btn btn-primary">添加用户</button>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-del">删除</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-8 col-sm-9 text-pos">
+                        <form class="form-inline">
+                            <!--<div class="form-group">-->
+                                <!--<label for="role">角色</label>-->
+                                <!--&lt;!&ndash;<select id="role" class="select2" >&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<option value="" selected="selected">请选择</option>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<option value="AL">Alabama</option>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<option value="WY">Wyoming</option>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<option value="TW">Taiwan</option>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</select>&ndash;&gt;-->
+                                <!--<select id="role" class="form-control" >-->
+                                    <!--<option value="" selected="selected">请选择</option>-->
+                                    <!--<option value="AL">Alabama</option>-->
+                                    <!--<option value="WY">Wyoming</option>-->
+                                    <!--<option value="TW">Taiwan</option>-->
+                                <!--</select>-->
+                            <!--</div>-->
+                            <div class="form-group">
+                                <label for="role">角色</label>
+                                <select id="role" class="form-control" >
+                                    <option value="" selected="selected">请选择</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                    <option value="TW">Taiwan</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="status">状态</label>
+                                <select id="status" class="form-control" >
+                                    <option value="" selected="selected">请选择</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                    <option value="TW">Taiwan</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group search">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+                                </div>
+                                <button type="button" class="btn btn-primary">搜索</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <table id="test">
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
